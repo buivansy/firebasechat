@@ -14,7 +14,7 @@ export class Listchat extends Component {
                 <TouchableOpacity style={styles.chatgroups} onPress={()=>this.chatgroups()}>
                     <Text>Welcome chat groups </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.chatgroups}>
+                <TouchableOpacity style={styles.chatgroups} onPress={()=>this.chatfriend()}>
                     <Text>Welcome chat friends </Text>
                 </TouchableOpacity>
             </View>
@@ -22,6 +22,9 @@ export class Listchat extends Component {
     }
     chatgroups(){
         this.props.navigation.navigate("Chatgroup");
+    }
+    chatfriend(){
+        this.props.navigation.navigate("Chatfriends");
     }
 }
 

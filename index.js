@@ -8,6 +8,8 @@ import Login from './containers/login';
 import Bootscreen from './containers/bootscreen';
 import Chatgroup from './components/chat/chatgroup';
 import Roomchat from './components/chat/roomchat';
+import Chatfriends from './components/chat/chatfriends';
+import Roomchatfriend from './components/chat/roomchatfriend'
 const Stack = createStackNavigator();
 
 function Navigation() {
@@ -19,6 +21,8 @@ function Navigation() {
         <Stack.Screen name="Home" component={Home} options={{ headerShown:false }}/>
         <Stack.Screen name="Chatgroup" component={Chatgroup} options={{ headerShown:false }}/>
         <Stack.Screen name="Roomchat" component={Roomchat} options={{ headerShown:false }}/>
+        <Stack.Screen name="Chatfriends" component={Chatfriends} options={{ headerShown:false }}/>
+        <Stack.Screen name="Roomchatfriend" component={Roomchatfriend} options={{ headerShown:false }}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
